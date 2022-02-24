@@ -1,8 +1,5 @@
-import { Link } from 'react-router-dom';
-import { useQuery } from '@apollo/client';
-import { QUERY_MATCHUPS } from '../utils/queries';
-import { useEffect, useState } from 'react';
-import Auth from '../utils/auth'
+import React from 'react';
+
 
 const Home = () => {
 
