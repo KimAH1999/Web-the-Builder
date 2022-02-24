@@ -1,17 +1,35 @@
 {
-  "name": "web-the-builder",
+
+  "name": "Web-The-Builder",
+
   "version": "1.0.0",
   "description": "",
   "main": "server/server.js",
   "scripts": {
-    "start": "node server/server.js",
-    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
-    "install": "cd server && npm i && cd ../client && npm i",
+
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd server && npm start",
+    "start:prod": "cd server && npm start",
+    "start:dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd server && npm install && cd ../client && npm install",
     "seed": "cd server && npm run seed",
-    "build": "cd client && npm run build"
+    "heroku-postbuild": "cd client && npm run build"
   },
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@work.github.com:/HCTyler/Web-the-Builder.git"
+  },
+  "keywords": [],
+  "author": "Izabela Petrovicova",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HCTyler/Web-the-Builder/issues"
+  },
+  "homepage": "https://github.com/HCTyler/Web-the-Builder",
+  "dependencies": {
+    "if-env": "^1.0.4"
+  },
+
   "devDependencies": {
     "concurrently": "^5.3.0"
   },
