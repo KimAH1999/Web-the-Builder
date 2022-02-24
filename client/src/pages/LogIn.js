@@ -10,7 +10,7 @@ import Auth from '../utils/auth';
 const Profile =() => {
 return(
     <div>
-    <h1>THIS IS OUR PRODUCT PAGE</h1>
+    <h1>THIS IS OUR LOGIN PAGE</h1>
   </div>
 )
 }
