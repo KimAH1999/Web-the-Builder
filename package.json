@@ -1,21 +1,30 @@
 {
-  "name": "mini-project-main",
+  "name": "Web-The-Builder",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "server/server.js",
   "scripts": {
-    "start:prod": "concurrently \"cd server && npm run server\" \"cd client && npm run server\"",
-    "start": "npm run build && cd server && node server.js",
-    "server": "cd server nodemon server.js --ignore client",
-    "build": "cd client && npm run build",
-    "install": "cd client && npm install",
-    "client": "cd client && npm start"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd server && npm start",
+    "start:prod": "cd server && npm start",
+    "start:dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd server && npm install && cd ../client && npm install",
+    "seed": "cd server && npm run seed",
+    "heroku-postbuild": "cd client && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@work.github.com:izabelacloud/Book-Search-Engine.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Izabela Petrovicova",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HCTyler/Web-the-Builder/issues"
+  },
+  "homepage": "https://github.com/HCTyler/Web-the-Builder",
   "dependencies": {
-    "express": "^4.17.1"
+    "if-env": "^1.0.4"
   },
   "devDependencies": {
     "concurrently": "^5.2.0"
