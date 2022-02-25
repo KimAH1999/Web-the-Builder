@@ -1,10 +1,11 @@
 //imports from pages
 import Home from './pages/Home';
 import Login from './pages/LogIn'
-import Products from './pages/Products'
-import Profile from './pages/Profile'
+import Products from './pages/products'
+import Profile from './pages/profile'
 import AppNavbar from './components/Navbar';
 import Footer from './components/Footer';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
