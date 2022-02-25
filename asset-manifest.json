@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Web-the-Builder/static/css/main.51e9feca.chunk.css",
+    "main.js": "/Web-the-Builder/static/js/main.da958b03.chunk.js",
+    "main.js.map": "/Web-the-Builder/static/js/main.da958b03.chunk.js.map",
+    "runtime-main.js": "/Web-the-Builder/static/js/runtime-main.fcb85789.js",
+    "runtime-main.js.map": "/Web-the-Builder/static/js/runtime-main.fcb85789.js.map",
+    "static/js/2.a259d5d3.chunk.js": "/Web-the-Builder/static/js/2.a259d5d3.chunk.js",
+    "static/js/2.a259d5d3.chunk.js.map": "/Web-the-Builder/static/js/2.a259d5d3.chunk.js.map",
+    "index.html": "/Web-the-Builder/index.html",
+    "precache-manifest.17e4b4446682b4969813406011eabc7e.js": "/Web-the-Builder/precache-manifest.17e4b4446682b4969813406011eabc7e.js",
+    "service-worker.js": "/Web-the-Builder/service-worker.js",
+    "static/css/main.51e9feca.chunk.css.map": "/Web-the-Builder/static/css/main.51e9feca.chunk.css.map",
+    "static/js/2.a259d5d3.chunk.js.LICENSE.txt": "/Web-the-Builder/static/js/2.a259d5d3.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fcb85789.js",
+    "static/js/2.a259d5d3.chunk.js",
+    "static/css/main.51e9feca.chunk.css",
+    "static/js/main.da958b03.chunk.js"
+  ]
+}
