@@ -17,34 +17,30 @@ const AppNavbar = () => {
           <Navbar.Brand as={Link} to='/'>
             Homepage
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls='navbar' />
-          <Navbar.Collapse id='navbar'>
-            <Nav className='ml-auto'>
-              <Nav.Link as={Link} to='/products'>
-                Search Videos
-              </Nav.Link>
-              {/* if user is logged in */}
-              {Auth.loggedIn() ? (
+          <Navbar.Brand as={Link} to='/products'>
+            Videos
+          </Navbar.Brand>
+
+          {Auth.loggedIn() ? (
                 <>
                   <Nav.Link as={Link} to='/profile'>
-                    See your videos
+                    My Profile
                   </Nav.Link>
                   <Nav.Link onClick={Auth.logout}>Logout</Nav.Link>
                 </>
               ) : (
-                <Nav.Link onClick={() => setShowModal(true)}>Login/Sign Up</Nav.Link>
+                <Nav.Link as={Link} to='/login'>Login/Sign Up</Nav.Link>
               )}
-            </Nav>
-          </Navbar.Collapse>
+
         </Container>
       </Navbar>
-      {/* set modal data up */}
+
+
       <Modal
         size='lg'
         show={showModal}
         onHide={() => setShowModal(false)}
         aria-labelledby='signup-modal'>
-        {/* tab container to do either signup or login component */}
         <Tab.Container defaultActiveKey='login'>
           <Modal.Header closeButton>
             <Modal.Title id='signup-modal'>
