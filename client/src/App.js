@@ -1,11 +1,12 @@
 //imports from pages
 import Home from './pages/Home';
-// import Login from './pages/LogIn'
-// import Products from './pages/Products'
-// import Profile from './pages/Profile'
+import Login from './pages/LogIn'
+import Products from './pages/Products'
+import Profile from './pages/Profile'
+import AppNavbar from './components/Navbar';
+import Footer from './components/Footer';
 
 import React from 'react';
-/*
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import {
   ApolloClient,
@@ -40,11 +41,27 @@ import { setContext } from '@apollo/client/link/context';
     link: authLink.concat(httpLink),
     cache: new InMemoryCache(),
   });
-*/
 
 function App() {
   return (
-    <Home/>
+    <ApolloProvider client={client}>
+      <Router>
+        <>
+        <AppNavbar />
+        <div className="flex-column justify-flex-start min-100-vh">
+        <div className="container">
+          <Switch>
+            <Route exact path= "/" component={Home} />
+            <Route exact path= "/login" component={Login} />
+            <Route exact path= "/products" component={Products} />
+            <Route exact path= "/profile" component={Profile} />
+          </Switch>
+        </div>
+        <Footer />
+      </div>
+        </>
+      </Router>
+    </ApolloProvider>
   );
 }
 
