@@ -20,6 +20,9 @@ const AppNavbar = () => {
           <Navbar.Brand as={Link} to='/products'>
             Videos
           </Navbar.Brand>
+          <Navbar.Brand as={Link} to='/profile'>
+            Profile
+          </Navbar.Brand>
 
 <Navbar.Collapse id='navbar'>
 <Nav className='ml-auto'>
