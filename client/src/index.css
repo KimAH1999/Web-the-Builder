@@ -1181,7 +1181,7 @@ label form [type='radio'] {
 }
 
 .container {
-  width: 85%;
+  width: 100%;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -1718,4 +1718,13 @@ label form [type='radio'] {
   .align-content-center-xl {
     align-content: center;
   }
+}
+.sitestory {
+  align-content: center;
+}
+
+img{
+  height: 45em;
+  overflow: hidden;
+  object-fit:cover
 }
