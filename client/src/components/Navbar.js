@@ -4,6 +4,7 @@ import { Navbar, Nav, Container, Modal, Tab } from 'react-bootstrap';
 import SignUpForm from './SignupForm';
 import LoginForm from './LoginForm';
 
+
 import Auth from '../utils/auth';
 
 const AppNavbar = () => {
@@ -15,10 +16,13 @@ const AppNavbar = () => {
       <Navbar bg='dark' variant='dark' expand='lg'>
         <Container fluid>
           <Navbar.Brand as={Link} to='/'>
-            Homepage
+            Home
           </Navbar.Brand>
           <Navbar.Brand as={Link} to='/products'>
             Videos
+          </Navbar.Brand>
+          <Navbar.Brand as={Link} to='/Contact'>
+            Contact
           </Navbar.Brand>
           <Navbar.Brand as={Link} to='/profile'>
             Profile

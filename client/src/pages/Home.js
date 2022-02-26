@@ -10,6 +10,7 @@ import {
 const Home = () => {
 
   return (
+
 <Row>
 <Col xs={12} md={8}>
   <Carousel>
