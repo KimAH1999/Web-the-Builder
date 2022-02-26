@@ -21,6 +21,8 @@ const AppNavbar = () => {
             Videos
           </Navbar.Brand>
 
+<Navbar.Collapse id='navbar'>
+<Nav className='ml-auto'>
           {Auth.loggedIn() ? (
                 <>
                   <Nav.Link as={Link} to='/profile'>
@@ -29,9 +31,10 @@ const AppNavbar = () => {
                   <Nav.Link onClick={Auth.logout}>Logout</Nav.Link>
                 </>
               ) : (
-                <Nav.Link as={Link} to='/login'>Login/Sign Up</Nav.Link>
+                <Nav.Link onClick={() => setShowModal(true)}>Login/Sign Up</Nav.Link>
               )}
-
+</Nav>
+</Navbar.Collapse>
         </Container>
       </Navbar>
 
