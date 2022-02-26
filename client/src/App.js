@@ -1,8 +1,9 @@
 //imports from pages
 import Home from './pages/Home';
-import Login from './pages/LogIn'
-import Products from './pages/products'
-import Profile from './pages/profile'
+import Login from './pages/LogIn';
+import Products from './pages/products';
+import Profile from './pages/profile';
+import Contact from './pages/contact';
 import AppNavbar from './components/Navbar';
 import Footer from './components/Footer';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
@@ -55,6 +56,7 @@ function App() {
             <Route exact path= "/" component={Home} />
             <Route exact path= "/login" component={Login} />
             <Route exact path= "/products" component={Products} />
+            <Route exact path= "/Contact" component={Contact} />
             <Route exact path= "/profile" component={Profile} />
           </Switch>
         </div>
