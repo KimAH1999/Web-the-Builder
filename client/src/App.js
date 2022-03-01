@@ -8,6 +8,7 @@ import AppNavbar from './components/Navbar';
 import Footer from './components/Footer';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
+
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import {

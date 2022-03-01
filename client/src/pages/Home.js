@@ -3,7 +3,8 @@ import {
   Carousel,
   Row,
   Col,
-  Button
+  Button,
+  Jumbotron
 } from 'react-bootstrap'
 
 
@@ -41,11 +42,14 @@ const Home = () => {
 </Col>
 
 <Col xs={6} md={4} className="sitestory">
-      <h1>THIS IS THE HOMEPAGE</h1>
+      <Jumbotron>
+        <h1>THIS IS THE HOMEPAGE</h1>
+      </Jumbotron>
+      
 
       <div className="d-grid gap-2">
         <Button variant="primary" size="lg">
-          Block level button
+          Build a website!
         </Button>
       </div>
 </Col>
