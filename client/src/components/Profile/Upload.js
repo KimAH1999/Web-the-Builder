@@ -1,44 +1,37 @@
 import "../../assets/style.css"
-import React, {Component} from "react"
-import {
-  Row,
-  Container,
-  Card
-} from 'react-bootstrap'
+import React from "react"
+import {Row,Container,Card} from 'react-bootstrap'
 
 
-class Upload extends Component{
-  state ={
-    selectedFile:null
+const Upload = () => {
+  const uploadImage = React.useRef(null)
+  const imageUploader = React.useRef(null)
+
+  const handleImageUpload = e =>{
+    const [file] = e.target.files
+    if (file) {
+      const reader = new FileReader()
+      const {current} = uploadImage
+      current.file= file
+      reader.onload=(e)=>{
+        current.src= e.target.result
+      }
+      reader.readAsDataURL(file)
+    }
   }
 
-  fileSelectedHandler = event => {
-    this.setState({
-      selectedFile: event.target
-    })
-  }
-
-  FileUploadHandler =()=>{
-    const fd = new FormData
-    fd.append("image",this.state.selectedFile, this.state.selectedFile.name)
-  }
-
-  render(){
   return (
-    <><Container>
+    <Container>
       <Row>
-        <Card style={{ width: '18rem' }}>
-          <Card.Img variant="top" src="../logo192.png" style={{ height: '18rem' }} />
+        <Card style={{ width: '18rem' }} onClick={(()=> imageUploader.current.click())}>
+          <img ref={uploadImage} variant="top" src="../logo192.png" alt="profile picture" style={{ height: '18rem' }} />
+          <input ref={imageUploader} type="file" accept="image" multiple={false} onChange={handleImageUpload} style={{display: "none"}}/>
         </Card>
       </Row>
     </Container>
-    <div className="App">
-      <input style={{display: "none"}}type="file" onChange={this.fileSelectedHandler} ref={fileInput => this.fileInput = fileInput}/>
-      <button onClick={() => this.fileInput.click(),this.fileSelectedHandler}>Upload</button>
-      <button onClick={this.FileUploadHandler}>Save</button>
-    </div></>
+
   );
 }
-}
+
 
 export default Upload;
