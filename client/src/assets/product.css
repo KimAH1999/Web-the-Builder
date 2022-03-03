@@ -1,0 +1,49 @@
+
+.containerCont {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.cardCont {
+    background: white;
+    width: 15vw; 
+    margin: 10px;
+    border-radius: 15px;
+}
+.cardCont-image { 
+    background-color: aqua;
+    height: 30vh;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+
+.cardCont h2 {
+    padding: 10px;
+
+}
+
+.cardCont p { 
+    padding: 10px;
+}
+
+.cardCont a {
+    background-color: rgb(54, 44, 143);
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    text-decoration: none;
+
+}
+
+.cardCont:hover {
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 1s ease;
+    
+}
