@@ -7,7 +7,6 @@ const Contact = () => {
         <div className="text-center">
             <h1>MEET THE TEAM</h1>
             <div className="column">
-      
                 <div className="card center">
                     <img src ="https://avatars.githubusercontent.com/u/86133108?v=4" class="rounded mx-auto d-block" alt="Jane" style={{ height: '25%', width: '25%' }} />
                     <div className="container">
