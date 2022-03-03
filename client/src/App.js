@@ -13,14 +13,8 @@ import { Provider } from 'react-redux';
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import {
-  ApolloClient,
-  InMemoryCache,
-  ApolloProvider,
-  createHttpLink,
-} from '@apollo/client';
+import { ApolloClient, InMemoryCache, ApolloProvider, createHttpLink} from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
-
 
   // Construct our main GraphQL API endpoint
   const httpLink = createHttpLink({
@@ -52,7 +46,7 @@ import { setContext } from '@apollo/client/link/context';
         <Router>
           <>
             <Navbar />
-              <div className="flex-column justify-flex-start min-100-vh" style={{backgroundImage: `url("https://wallpaperaccess.com/full/2662002.jpg")`}}>
+            <div className="flex-column justify-flex-start min-100-vh backgroundGradient">
               <div className="container">
             <Provider store={store}>
               <Nav />
