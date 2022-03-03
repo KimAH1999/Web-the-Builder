@@ -1,4 +1,3 @@
-import "../../assets/style.css"
 import React from "react"
 import {Row,Container,Card} from 'react-bootstrap'
 

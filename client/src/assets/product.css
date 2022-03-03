@@ -6,33 +6,18 @@
 }
 .cardCont {
     background: white;
-    width: 220px; 
+    width: 15vw; 
     margin: 10px;
     border-radius: 15px;
 }
 .cardCont-image { 
     background-color: aqua;
-    height: 150px;
+    height: 30vh;
     margin-bottom: 15px;
     background-size: cover;
     border-radius: 15px 15px 0 0;
 }
 
-
-.website-1 {
-    background-image: url('##');
-
-}
-
-.website-2 {
-    background-image: url('##');
-    
-}
-
-.website-3 {
-    background-image: url('##');
-    
-}
 
 .cardCont h2 {
     padding: 10px;

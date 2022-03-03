@@ -13,7 +13,7 @@ import {
 
 const Profile =() => {
 return(
-    <div class="container container-fluid">
+    <div>
 
     <Container>
       <Row>
