@@ -52,7 +52,7 @@ function App() {
         <>
         <AppNavbar />
         <div className="flex-column justify-flex-start min-100-vh" style={{backgroundImage: `url("https://wallpaperaccess.com/full/2662002.jpg")`}}>
-        <div className="container">
+        <div className="flex-column justify-flex-start">
           <Switch>
             <Route exact path= "/" component={Home} />
             <Route exact path= "/login" component={Login} />

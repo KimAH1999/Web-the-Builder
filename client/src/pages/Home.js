@@ -1,11 +1,5 @@
 import React from 'react';
-import {
-  Carousel,
-  Row,
-  Col,
-  Button,
-  Jumbotron
-} from 'react-bootstrap'
+import {Carousel,Row,Col,Button} from 'react-bootstrap'
 
 
 const Home = () => {
@@ -13,9 +7,9 @@ const Home = () => {
   return (
 
 <Row>
-<Col xs={12} md={8}>
+<Col>
   <Carousel>
-    <Carousel.Item interval={1000}>
+    <Carousel.Item interval={500}>
       <img fluid
         className="d-block w-100"
         src="https://media.istockphoto.com/photos/three-potatoes-picture-id157430678?k=20&m=157430678&s=612x612&w=0&h=dfYLuPYwA50ojI90hZ4jCgKZd5TGnqf24UCVBszoZIA="
@@ -31,7 +25,7 @@ const Home = () => {
       />
     </Carousel.Item>
 
-    <Carousel.Item>
+    <Carousel.Item interval={500}>
       <img fluid
         className="d-block w-100"
         src="https://www.littlepotatoes.com/drive/uploads/2018/07/Nutritional-Difference-of-Potatoes-1180x560.jpg"
@@ -41,10 +35,10 @@ const Home = () => {
   </Carousel>
 </Col>
 
-<Col xs={6} md={4} className="sitestory">
-      <Jumbotron>
+<Col>
+      <div>
         <h1>THIS IS THE HOMEPAGE</h1>
-      </Jumbotron>
+      </div>
       
 
       <div className="d-grid gap-2">
