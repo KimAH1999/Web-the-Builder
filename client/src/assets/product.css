@@ -14,10 +14,28 @@
     background-color: aqua;
     height: 30vh;
     margin-bottom: 15px;
-    background-size: cover;
+    background-size:contain;
     border-radius: 15px 15px 0 0;
 }
 
+.website-1 {
+    background-image: url('../assets/image/HTML.jpg');
+
+}
+
+.website-2 {
+    background-image: url('../assets/image/CSS.jpg');
+    
+}
+
+.website-3 {
+    background-image: url('../assets/image/Javascript.png');
+    
+}
+.website-4 {
+    background-image: url('../assets/image/React.png');
+    
+}
 
 .cardCont h2 {
     padding: 10px;

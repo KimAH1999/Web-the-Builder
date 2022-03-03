@@ -7,17 +7,11 @@ import Contact from './pages/contact';
 import AppNavbar from './components/Navbar';
 import Footer from './components/Footer';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-
-
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import {
-  ApolloClient,
-  InMemoryCache,
-  ApolloProvider,
-  createHttpLink,
-} from '@apollo/client';
+import {ApolloClient,InMemoryCache,ApolloProvider,createHttpLink,} from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
+
 
 
 
@@ -46,12 +40,14 @@ import { setContext } from '@apollo/client/link/context';
   });
 
 function App() {
+
+
   return (
     <ApolloProvider client={client}>
       <Router>
         <>
         <AppNavbar />
-        <div className="flex-column justify-flex-start min-100-vh" style={{backgroundImage: `url("https://wallpaperaccess.com/full/2662002.jpg")`}}>
+        <div className="flex-column justify-flex-start min-100-vh backgroundGradient">
         <div className="flex-column justify-flex-start">
           <Switch>
             <Route exact path= "/" component={Home} />
