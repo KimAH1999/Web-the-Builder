@@ -1,6 +1,6 @@
 import React from 'react';
 import Comment from '../components/Profile/Comment';
-import History from '../components/Profile/History';
+// import History from '../components/Profile/History';
 import Upload from '../components/Profile/Upload';
 import Skills from '../components/Profile/Skills';
 import {
@@ -12,24 +12,23 @@ import {
 
 
 const Profile =() => {
-return(
-    <div class="container container-fluid">
+const containerstyles={
+  width:"100%"
+}
 
-    <Container>
+return(
+    <div>
+
+    <Container fluid>
       <Row>
         <Col>
           <Upload />
         </Col>
         <Col>
-          <History />
+          <Comment />
         </Col>
-      </Row>
-      <Row>
         <Col>
           <Skills />
-        </Col>
-        <Col>
-          <Comment />
         </Col>
       </Row>
     </Container>
