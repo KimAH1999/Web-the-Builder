@@ -1728,7 +1728,3 @@ img{
   overflow: hidden;
   object-fit:cover
 }
-
-.backgroundGradient {
-  background-image: linear-gradient(240deg, rgba(238, 255, 0, 0.76), rgba(0, 255, 34, 0.76),rgba(3, 0, 173, 0.746));
-}

@@ -2,18 +2,19 @@
 import Home from './pages/Home';
 import Login from './pages/LogIn';
 import Products from './pages/products';
-import Profile from './pages/profile';
+import Success from './pages/Success';
 import Contact from './pages/contact';
-import AppNavbar from './components/Navbar';
-import Footer from './components/Footer';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import Nav from './components/Nav';
+import OrderHistory from './pages/OrderHistory';
+import Detail from './pages/Detail';
+import NoMatch from './pages/NoMatch';
+import store from './utils/store';
+import { Provider } from 'react-redux';
 import React from 'react';
+import Navbar from 'react-bootstrap/Navbar'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import {ApolloClient,InMemoryCache,ApolloProvider,createHttpLink,} from '@apollo/client';
+import { ApolloClient, InMemoryCache, ApolloProvider, createHttpLink} from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
-
-
-
 
   // Construct our main GraphQL API endpoint
   const httpLink = createHttpLink({
@@ -39,30 +40,33 @@ import { setContext } from '@apollo/client/link/context';
     cache: new InMemoryCache(),
   });
 
-function App() {
-
-
-  return (
-    <ApolloProvider client={client}>
-      <Router>
-        <>
-        <AppNavbar />
-        <div className="flex-column justify-flex-start min-100-vh backgroundGradient">
-        <div className="flex-column justify-flex-start">
-          <Switch>
-            <Route exact path= "/" component={Home} />
-            <Route exact path= "/login" component={Login} />
-            <Route exact path= "/products" component={Products} />
-            <Route exact path= "/Contact" component={Contact} />
-            <Route exact path= "/profile" component={Profile} />
-          </Switch>
-        </div>
-        <Footer />
-      </div>
+  function App() {
+    return (
+      <ApolloProvider client={client}>
+        <Router>
+          <>
+            <Navbar />
+            <div className="flex-column justify-flex-start min-100-vh backgroundGradient">
+              <div className="container">
+            <Provider store={store}>
+              <Nav />
+              <Switch>
+                <Route exact path="/" component={Home} />
+                <Route exact path="/login" component={Login} />
+                <Route exact path= "/products" component={Products} />
+                <Route exact path= "/Contact" component={Contact} />
+                <Route exact path="/success" component={Success} />
+                <Route exact path="/orderHistory" component={OrderHistory} />
+                <Route exact path="/products/:id" component={Detail} />
+                <Route component={NoMatch} />
+              </Switch>
+            </Provider>
+            </div>
+          </div>
         </>
       </Router>
     </ApolloProvider>
-  );
-}
+    );
+  }
 
 export default App;

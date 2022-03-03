@@ -1,42 +1,72 @@
-import React from 'react';
-import "../assets/product.css"
+import React, { useEffect } from 'react';
+import ProductItem from '../../src/components/ProductItem';
+import { useDispatch, useSelector } from 'react-redux';
+import { UPDATE_PRODUCTS } from '../../src/utils/actions';
+import { useQuery } from '@apollo/client';
+import { QUERY_PRODUCTS } from '../utils/queries';
+import { idbPromise } from '../utils/helpers';
+import spinner from '../assets/spinner.gif';
 
+function Product() {
 
-const Product =() => {
-return(
-<section className="containerCont">
-<div>
-  <a href =" https://www.youtube.com/playlist?list=PL6VsrHTw_Ntf7oni6QcOh8iGXS0Bxwoef">
-    <div className="cardCont">
-      <div className="cardCont-image website-1" />
-      <h2>HTML Tutorial</h2>
-    </div>
-  </a>
-</div>
-<div>
-  <a href ="https://www.youtube.com/playlist?list=PL6VsrHTw_NtdO2OnEdrZKRYD1xzxvy8U_">
-    <div className="cardCont">
-      <div className="cardCont-image website-2" />
-      <h2>CSS Tutorial</h2>
-    </div>
-  </a>
-</div>
-<div>
-  <a href =" https://www.youtube.com/playlist?list=PL6VsrHTw_NtfZpAZHtHdHP1Ol6m72ePS4">
-    <div className="cardCont">
-      <div className="cardCont-image website-3" />
-      <h2>Javascript Tutorial</h2>
-    </div>
-  </a>
-</div><div>
-  <a href ="https://www.youtube.com/watch?v=p77o4VJHaAU&list=PL6VsrHTw_NtdWRP8hPwL5an9cNdrDpckU">
-    <div className="cardCont">
-      <div className="cardCont-image website-4" />
-      <h2>React Tutorial</h2>
-    </div>
-  </a>
-</div>
-</section>
-)
-}
-export default Product
+  const dispatch = useDispatch();
+  const state = useSelector((state) => state);
+
+  const { currentCategory } = state;
+
+  const { loading, data } = useQuery(QUERY_PRODUCTS);
+
+  useEffect(() => {
+    if (data) {
+      dispatch({
+        type: UPDATE_PRODUCTS,
+        products: data.products,
+      });
+      data.products.forEach((product) => {
+        idbPromise('products', 'put', product);
+      });
+    } else if (!loading) {
+      idbPromise('products', 'get').then((products) => {
+        dispatch({
+          type: UPDATE_PRODUCTS,
+          products: products,
+        });
+      });
+    }
+  }, [data, loading, dispatch]);
+
+  function filterProducts() {
+    if (!currentCategory) {
+      return state.products;
+    }
+
+    return state.products.filter(
+      (product) => product.category._id === currentCategory
+    );
+  }
+
+    return (
+      <div className="my-2">
+        <h2>Our Products:</h2>
+        {state.products.length ? (
+          <div className="flex-row">
+            {filterProducts().map((product) => (
+              <ProductItem
+                key={product._id}
+                _id={product._id}
+                image={product.image}
+                name={product.name}
+                price={product.price}
+                quantity={product.quantity}
+              />
+            ))}
+          </div>
+        ) : (
+          <h3>You haven't added any products yet!</h3>
+        )}
+        {loading ? <img src={spinner} alt="loading" /> : null}
+      </div>
+    );
+  }
+  
+  export default Product; 

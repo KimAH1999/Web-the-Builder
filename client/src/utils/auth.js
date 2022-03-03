@@ -1,3 +1,4 @@
+//import for node_modules>jwt-decode 
 import decode from 'jwt-decode';
 
 class AuthService {
@@ -34,7 +35,7 @@ class AuthService {
 
   logout() {
     localStorage.removeItem('id_token');
-    window.location.reload();
+    window.location.reload('/');
   }
 }
 

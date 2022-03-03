@@ -1,0 +1,103 @@
+
+.containerCont {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.cardCont {
+    background: white;
+    width: 15vw; 
+    margin: 10px;
+    border-radius: 15px;
+}
+.cardCont-image { 
+    background-color: aqua;
+    height: 30vh;
+    margin-bottom: 15px;
+    background-size:contain;
+    border-radius: 15px 15px 0 0;
+}
+
+.website-1 {
+    background-image: url('../../build/images/html-basic.png');
+
+}
+
+.website-2 {
+    background-image: url('../../build/images/CSS.png');
+    
+}
+
+.website-3 {
+    background-image: url('../../build/images/Java.jpg');
+    
+}
+.website-4 {
+    background-image: url('../../build//images/OOP.png');
+    
+}
+.website-5 {
+    background-image: url('../../build//images/SQL.png');
+    
+}
+.website-6 {
+    background-image: url('../../build//images/ORM.png');
+    
+}
+.website-7 {
+    background-image: url('../../build//images/MVC.png');
+    
+}
+.website-8 {
+    background-image: url('../../build//images/CS.png');
+    
+}
+.website-9 {
+    background-image: url('../../build//images/NoSQL.png');
+    
+}
+.website-10 {
+    background-image: url('../../build//images/PWA.png');
+    
+}
+.website-11 {
+    background-image: url('../../build//images/React.png');
+    
+}
+.website-12 {
+    background-image: url('../../build//images/MERN.png');
+    
+}
+.website-13 {
+    background-image: url('../../build//images/State.png');
+    
+}
+
+.cardCont h2 {
+    padding: 10px;
+
+}
+
+.cardCont p { 
+    padding: 10px;
+}
+
+.cardCont a {
+    background-color: rgb(54, 44, 143);
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    text-decoration: none;
+
+}
+
+.cardCont:hover {
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 1s ease;
+    
+}
