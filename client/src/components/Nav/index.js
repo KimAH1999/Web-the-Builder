@@ -48,7 +48,7 @@ function Nav() {
   return (
     <header className="flex-row px-1">
       <h1>
-        <Link to="/Home">
+        <Link to="/">
           <span role="img" aria-label="Home Page">
           💻 
           </span>
