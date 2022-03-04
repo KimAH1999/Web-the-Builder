@@ -1,38 +1,143 @@
-import React, { useEffect } from 'react';
-import ProductItem from '../components/ProductItem';
-import { useDispatch, useSelector } from 'react-redux';
-import { UPDATE_PRODUCTS } from '../utils/actions';
-import { useQuery } from '@apollo/client';
-import { QUERY_PRODUCTS } from '../utils/queries';
-import { idbPromise } from '../utils/helpers';
-import spinner from '../assets/spinner.gif';
+import React from 'react';
+import Cart from "../components/Cart";
+import {
+  Carousel,
+  Row,
+  Col,
+  Button,
+  Jumbotron
+} from 'react-bootstrap';
+import "../../node_modules/bootstrap/dist/css/bootstrap.css"
 
-function Home() {
 
-  const dispatch = useDispatch();
-  const state = useSelector((state) => state);
+const Home = () => {
 
-  const { currentCategory } = state;
+  return (
+    <Row>
+      <Col xs={12} md={8}>
+        <Carousel>
+          <Carousel.Item interval={900}>
+            <img fluid
+              className="d-block w-100"
+              src="./images/html-basic.png"
+              alt="HTML"
+            />
+          </Carousel.Item>
+          <Carousel.Item interval={900}>
+            <img fluid
+              className="d-block w-100"
+              src="./images/CSS.png"
+              alt="CSS"
+            />
+          </Carousel.Item>
+          <Carousel.Item interval={900}>
+            <img fluid
+              className="d-block w-100"
+              src="./images/Java.jpg"
+              alt="Java"
+            />
+          </Carousel.Item>
+          <Carousel.Item interval={500}>
+            <img fluid
+              className="d-block w-100"
+              src="./images/OOP.png"
+              alt="OOP"
+            />
+          </Carousel.Item>
+          <Carousel.Item interval={500}>
+            <img fluid
+              className="d-block w-100"
+              src="./images/SQL.png"
+              alt="SQL"
+            />
+          </Carousel.Item>
+          <Carousel.Item interval={500}>
+            <img fluid
+              className="d-block w-100"
+              src="./images/ORM.png"
+              alt="ORM"
+            />
+          </Carousel.Item>
+          <Carousel.Item interval={500}>
+            <img fluid
+              className="d-block w-100"
+              src="./images/MVC.png"
+              alt="MVC"
+            />
+          </Carousel.Item>
+          <Carousel.Item interval={500}>
+            <img fluid
+              className="d-block w-100"
+              src="./images/CS.png"
+              alt="CS"
+            />
+          </Carousel.Item>
+          <Carousel.Item interval={500}>
+            <img fluid
+              className="d-block w-100"
+              src="./images/NoSQL.png"
+              alt="NoSQL"
+            />
+          </Carousel.Item>
+          <Carousel.Item interval={500}>
+            <img fluid
+              className="d-block w-100"
+              src="./images/PWA.png"
+              alt="PWA"
+            />
+          </Carousel.Item>
+          <Carousel.Item interval={500}>
+            <img fluid
+              className="d-block w-100"
+              src="./images/React.png"
+              alt="CSS"
+            />
+          </Carousel.Item>
+          <Carousel.Item interval={500}>
+            <img fluid
+              className="d-block w-100"
+              src="./images/MERN.png"
+              alt="CSS"
+            />
+          </Carousel.Item>
+          <Carousel.Item interval={500}>
+            <img fluid
+              className="d-block w-100"
+              src="./images/State.png"
+              alt="State"
+            />
+          </Carousel.Item>
+          <Carousel.Item interval={500}>
+            <img fluid
+              className="d-block w-100"
+              src="./images/.png"
+              alt="CSS"
+            />
+          </Carousel.Item>
+        </Carousel>
+        <Cart />
+      </Col>
 
-  const { loading, data } = useQuery(QUERY_PRODUCTS);
+      <Col xs={6} md={4} className="sitestory">
+        <Jumbotron>
+          <h1>Explore the fundamentals that goes into building a website. </h1><br></br>
+          <h7>This could apply to anything from creating a single plain text webpage
+                  to developing a complex web application.</h7>
+        </Jumbotron>
 
-  useEffect(() => {
-    if (data) {
-      dispatch({
-        type: UPDATE_PRODUCTS,
-        products: data.products,
-      });
-      data.products.forEach((product) => {
-        idbPromise('products', 'put', product);
-      });
-    } else if (!loading) {
-      idbPromise('products', 'get').then((products) => {
-        dispatch({
-          type: UPDATE_PRODUCTS,
-          products: products,
-        });
-      });
-    }
+        <div className="d-grid gap-2">
+          <Button variant="primary" size="lg">
+            Build a website!
+          </Button>
+        </div>
+      </Col>
+    </Row>
+
+  );
+};
+
+export default Home;
+
   }, [data, loading, dispatch]);
 
   function filterProducts() {
