@@ -38,7 +38,7 @@ const Home = () => {
           <Carousel.Item interval={900}>
             <img fluid
               className="d-block w-100"
-              src="./images/Java.jpg"
+              src="./images/Java.png"
               alt="Java"
               style={imgStyle}
             />
