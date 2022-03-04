@@ -28,20 +28,30 @@ function Nav() {
             <Link to="/">Home</Link>
           </li>
           <li className="mx-1">
-            <Link to="/Products">Products</Link>
+            <Link to="/products">Products</Link>
           </li>
           <li className="mx-1">
             <Link to="/Contact">Contact</Link>
+          </li>
+          <li className="mx-1">
+            <Link to="/profile">Profile</Link>
+          </li>
+          <li className="mx-1">
+            <Link to="/signup">Signup</Link>
+          </li>
+          <li className="mx-1">
+            <Link to="/login">Login</Link>
           </li>
         </ul>
       );
     }
   }
 
+
   return (
-    <header className="flex-row px-1">
+    <header className=" px-1">
       <h1>
-        <Link to="/Home">
+        <Link to="/">
           <span role="img" aria-label="Home Page">
           💻 
           </span>
