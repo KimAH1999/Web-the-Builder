@@ -1722,3 +1722,9 @@ label form [type='radio'] {
 .sitestory {
   align-content: center;
 }
+/*Section for products page for img*/
+img{
+  height: 35em;
+  overflow: hidden;
+  object-fit: contain;
+}
