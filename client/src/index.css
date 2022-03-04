@@ -1724,7 +1724,7 @@ label form [type='radio'] {
 }
 
 img{
-  height: 45em;
+  height: 35em;
   overflow: hidden;
   object-fit:cover
 }
