@@ -1,5 +1,5 @@
 {
-  "name": "Web-The-Builder",
+  "name": "Web-the-Builder",
   "version": "1.0.0",
   "description": "",
   "main": "server/server.js",
@@ -24,14 +24,11 @@
   },
   "homepage": "https://github.com/HCTyler/Web-the-Builder",
   "dependencies": {
-    "if-env": "^1.0.4"
+    "bcrypt": "^5.0.1",
+    "if-env": "^1.0.4",
+    "jsonwebtoken": "^8.5.1"
   },
   "devDependencies": {
     "concurrently": "^5.2.0"
-  }
-}
-
-    "bcrypt": "^5.0.1",
-    "jsonwebtoken": "^8.5.1"
   }
 }
