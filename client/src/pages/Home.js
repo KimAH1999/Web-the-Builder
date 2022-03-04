@@ -3,9 +3,18 @@ import Cart from "../components/Cart";
 import {Carousel,Row,Col,Button,Jumbotron} from 'react-bootstrap';
 import "../../node_modules/bootstrap/dist/css/bootstrap.css"
 
-
+// img{
+//   /* height: 45em; */
+//   overflow: hidden;
+//   object-fit:cover
+// }
 const Home = () => {
+  const imgStyle={
+    height: "45em",
+    overflow: "hidden",
+    objectFit:"cover",
 
+  }
   return (
     <Row>
       <Col xs={12} md={8}>
@@ -15,6 +24,7 @@ const Home = () => {
               className="d-block w-100"
               src="./images/html-basic.png"
               alt="HTML"
+              style={imgStyle}
             />
           </Carousel.Item>
           <Carousel.Item interval={900}>
@@ -22,6 +32,7 @@ const Home = () => {
               className="d-block w-100"
               src="./images/CSS.png"
               alt="CSS"
+              style={imgStyle}
             />
           </Carousel.Item>
           <Carousel.Item interval={900}>
@@ -29,6 +40,7 @@ const Home = () => {
               className="d-block w-100"
               src="./images/Java.jpg"
               alt="Java"
+              style={imgStyle}
             />
           </Carousel.Item>
           <Carousel.Item interval={500}>
@@ -36,6 +48,7 @@ const Home = () => {
               className="d-block w-100"
               src="./images/OOP.png"
               alt="OOP"
+              style={imgStyle}
             />
           </Carousel.Item>
           <Carousel.Item interval={500}>
@@ -43,6 +56,7 @@ const Home = () => {
               className="d-block w-100"
               src="./images/SQL.png"
               alt="SQL"
+              style={imgStyle}
             />
           </Carousel.Item>
           <Carousel.Item interval={500}>
@@ -50,6 +64,7 @@ const Home = () => {
               className="d-block w-100"
               src="./images/ORM.png"
               alt="ORM"
+              style={imgStyle}
             />
           </Carousel.Item>
           <Carousel.Item interval={500}>
@@ -57,6 +72,7 @@ const Home = () => {
               className="d-block w-100"
               src="./images/MVC.png"
               alt="MVC"
+              style={imgStyle}
             />
           </Carousel.Item>
           <Carousel.Item interval={500}>
@@ -64,6 +80,7 @@ const Home = () => {
               className="d-block w-100"
               src="./images/CS.png"
               alt="CS"
+              style={imgStyle}
             />
           </Carousel.Item>
           <Carousel.Item interval={500}>
@@ -71,6 +88,7 @@ const Home = () => {
               className="d-block w-100"
               src="./images/NoSQL.png"
               alt="NoSQL"
+              style={imgStyle}
             />
           </Carousel.Item>
           <Carousel.Item interval={500}>
@@ -78,6 +96,7 @@ const Home = () => {
               className="d-block w-100"
               src="./images/PWA.png"
               alt="PWA"
+              style={imgStyle}
             />
           </Carousel.Item>
           <Carousel.Item interval={500}>
@@ -85,6 +104,7 @@ const Home = () => {
               className="d-block w-100"
               src="./images/React.png"
               alt="CSS"
+              style={imgStyle}
             />
           </Carousel.Item>
           <Carousel.Item interval={500}>
@@ -92,6 +112,7 @@ const Home = () => {
               className="d-block w-100"
               src="./images/MERN.png"
               alt="CSS"
+              style={imgStyle}
             />
           </Carousel.Item>
           <Carousel.Item interval={500}>
@@ -99,6 +120,7 @@ const Home = () => {
               className="d-block w-100"
               src="./images/State.png"
               alt="State"
+              style={imgStyle}
             />
           </Carousel.Item>
           <Carousel.Item interval={500}>
@@ -106,6 +128,7 @@ const Home = () => {
               className="d-block w-100"
               src="./images/.png"
               alt="CSS"
+              style={imgStyle}
             />
           </Carousel.Item>
         </Carousel>

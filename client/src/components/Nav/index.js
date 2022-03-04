@@ -2,6 +2,7 @@ import React from 'react';
 import Auth from '../../utils/auth';
 import { Link } from 'react-router-dom';
 import {Navbar,Container,Nav} from 'react-bootstrap';
+import logo from "../../assets/hammer.gif"
 
 function NavLink() {
   // const navstyleditem={
@@ -44,10 +45,14 @@ function NavLink() {
   return (
 <Navbar bg="dark" variant="dark">
   <Container>
-        <Navbar.Brand href="/">
-          Web the Builder
-        </Navbar.Brand>
-      <Nav>{showNavigation()}</Nav>
+    <Navbar.Brand href="/">
+    <img alt="" src={logo} height="30px" className="d-inline-block align-top"/>{' '}
+      Web the Builder
+    </Navbar.Brand>
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav>{showNavigation()}</Nav>
+        </Navbar.Collapse>
   </Container>
 </Navbar>
   );

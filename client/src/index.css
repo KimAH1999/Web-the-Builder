@@ -1722,9 +1722,3 @@ label form [type='radio'] {
 .sitestory {
   align-content: center;
 }
-
-img{
-  height: 45em;
-  overflow: hidden;
-  object-fit:cover
-}
