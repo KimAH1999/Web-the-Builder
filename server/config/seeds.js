@@ -140,22 +140,18 @@ db.once('open', async () => {
   console.log('products seeded');
 
   await User.deleteMany();
-
+  
+  //change user data to your own to create a login or use GRAPHQL from the server port given
   await User.create({
-    username: 'Group6',
-    email: 'ItFINALLYWORKED@example.com',
+    firstName: 'Kim',
+    lastName: 'Agui',
+    email: 'Kim@example.com',
     password: '!@#$%Qwert',
     orders: [
       {
-        products: [products[0]._id, products[0]._id, products[1]._id]
+        products: [products[0]._id, products[1]._id, products[2]._id]
       }
     ]
-  });
-
-  await User.create({
-    username: 'Mickey',
-    email: 'ClubHouse@example.com',
-    password: '!@#$%Qwert'
   });
 
   console.log('users seeded');
