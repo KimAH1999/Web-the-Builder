@@ -12,9 +12,6 @@ import {
 
 
 const Profile =() => {
-const containerstyles={
-  width:"100%"
-}
 
 return(
     <div>
