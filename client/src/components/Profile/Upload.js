@@ -1,5 +1,6 @@
 import React from "react"
 import {Row,Container,Card} from 'react-bootstrap'
+import blankprofile from "../../assets/blankprofile.png"
 
 
 const Upload = () => {
@@ -23,7 +24,7 @@ const Upload = () => {
     <Container>
       <Row>
         <Card style={{ width: '18rem' }} onClick={(()=> imageUploader.current.click())}>
-          <img ref={uploadImage} variant="top" src="../logo192.png" alt="profile picture" style={{ height: '18rem' }} />
+          <img ref={uploadImage} variant="top" src={blankprofile} alt="" style={{ height: '18rem' }} />
           <input ref={imageUploader} type="file" accept="image" multiple={false} onChange={handleImageUpload} style={{display: "none"}}/>
         </Card>
       </Row>
