@@ -17,59 +17,56 @@
     background-size:contain;
     border-radius: 15px 15px 0 0;
 }
-
+/*Home page images carousel section*/
 .website-1 {
     background-image: url('../../build/images/html-basic.png');
-
 }
 
 .website-2 {
     background-image: url('../../build/images/CSS.png');
-    
 }
 
 .website-3 {
-    background-image: url('../../build/images/Java.jpg');
-    
+    background-image: url('../../build/images/Java.png');
 }
 .website-4 {
-    background-image: url('../../build//images/OOP.png');
+    background-image: url('../../build/images/OOP.png');
     
 }
 .website-5 {
-    background-image: url('../../build//images/SQL.png');
+    background-image: url('../../build/images/SQL.png');
     
 }
 .website-6 {
-    background-image: url('../../build//images/ORM.png');
+    background-image: url('../../build/images/ORM.png');
     
 }
 .website-7 {
-    background-image: url('../../build//images/MVC.png');
+    background-image: url('../../build/images/MVC.png');
     
 }
 .website-8 {
-    background-image: url('../../build//images/CS.png');
+    background-image: url('../../build/images/CS.png');
     
 }
 .website-9 {
-    background-image: url('../../build//images/NoSQL.png');
+    background-image: url('../../build/images/NoSQL.png');
     
 }
 .website-10 {
-    background-image: url('../../build//images/PWA.png');
+    background-image: url('../../build/images/PWA.png');
     
 }
 .website-11 {
-    background-image: url('../../build//images/React.png');
+    background-image: url('../../build/images/React.png');
     
 }
 .website-12 {
-    background-image: url('../../build//images/MERN.png');
+    background-image: url('../../build/images/MERN.png');
     
 }
 .website-13 {
-    background-image: url('../../build//images/State.png');
+    background-image: url('../../build/images/State.png');
     
 }
 

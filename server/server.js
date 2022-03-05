@@ -6,7 +6,7 @@ const { typeDefs, resolvers } = require('./schemas');
 const { authMiddleware } = require('./utils/auth');
 const db = require('./config/connection');
 
-const PORT = process.env.PORT || 3002;
+const PORT = process.env.PORT || 3002; //playground "graphql" port section
 const app = express();
 
 const server = new ApolloServer({
@@ -29,8 +29,6 @@ app.get('*', (req, res) => {
 });
 
 db.once('open', () => {
-  app.listen(PORT, () => {
-    console.log(`API server running on port ${PORT}!`);
-    console.log(`Use GraphQL at http://localhost:${PORT}${server.graphqlPath}`);
-  });
+  app.listen(PORT, () => console.log(`🌍 Now listening on PORT # => ${PORT}`));
+  console.log(`Use GraphQL at http://localhost:${PORT}${server.graphqlPath}`);
 });
