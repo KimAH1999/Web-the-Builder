@@ -1,5 +1,4 @@
 import React from 'react';
-import Cart from "../components/Cart";
 import {Carousel,Row,Col,Button,Jumbotron} from 'react-bootstrap';
 import "../../node_modules/bootstrap/dist/css/bootstrap.css"
 
@@ -132,7 +131,6 @@ const Home = () => {
             />
           </Carousel.Item>
         </Carousel>
-        <Cart />
       </Col>
 
       <Col xs={6} md={4} className="sitestory">

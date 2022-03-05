@@ -1,6 +1,6 @@
 import React from 'react';
 import Auth from '../../utils/auth';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import {Navbar,Container,Nav} from 'react-bootstrap';
 import logo from "../../assets/hammer.gif"
 
@@ -43,15 +43,15 @@ function NavLink() {
   }
 
   return (
-<Navbar bg="dark" variant="dark">
+<Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
   <Container>
     <Navbar.Brand href="/">
-    <img alt="" src={logo} height="30px" className="d-inline-block align-top"/>{' '}
+    <img alt="" src={logo} height="40px" className="d-inline-block align-top"/>{' '}
       Web the Builder
     </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav>{showNavigation()}</Nav>
+          <Nav className="me-auto">{showNavigation()}</Nav>
         </Navbar.Collapse>
   </Container>
 </Navbar>
