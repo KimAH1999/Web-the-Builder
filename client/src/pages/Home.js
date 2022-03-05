@@ -9,7 +9,7 @@ import "../../node_modules/bootstrap/dist/css/bootstrap.css"
 // }
 const Home = () => {
   const imgStyle={
-    height: "45em",
+    height: "38em",
     overflow: "hidden",
     objectFit:"cover",
 
@@ -37,7 +37,7 @@ const Home = () => {
           <Carousel.Item interval={900}>
             <img fluid
               className="d-block w-100"
-              src="./images/Java.jpg"
+              src="./images/Java.png"
               alt="Java"
               style={imgStyle}
             />

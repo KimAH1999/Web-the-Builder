@@ -46,12 +46,12 @@ function NavLink() {
 <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
   <Container>
     <Navbar.Brand href="/">
-    <img alt="" src={logo} height="40px" className="d-inline-block align-top"/>{' '}
-      Web the Builder
+    <img alt="" src={logo} height="30px" className="d-inline-block align-top"/>{' '}
+    🅦🅔🅑 🅣🅗🅔 🅑🅤🅘🅛🅓🅔🅡
     </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">{showNavigation()}</Nav>
+          <Nav>{showNavigation()}</Nav>
         </Navbar.Collapse>
   </Container>
 </Navbar>
