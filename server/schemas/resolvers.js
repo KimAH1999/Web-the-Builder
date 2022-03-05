@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 //imports
 const { AuthenticationError } = require('apollo-server-express');
 const { User, Product, Category, Order } = require('../models');
@@ -288,4 +287,3 @@ const resolvers = {
 };
 
 module.exports = resolvers;
->>>>>>> f239d2469acf2e3e40d3e5d683b889a3ae6413bb
