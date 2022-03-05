@@ -20,7 +20,8 @@ function NavLink() {
             <Nav.Link href="/products">Products</Nav.Link>
             <Nav.Link href="/Contact">Contact</Nav.Link>
             <Nav.Link href="/orderHistory">Order History</Nav.Link>
-
+            <Nav.Link href="/profile">Profile</Nav.Link>
+            
           <li className="mx-1">
             {/* this is not using the Link component to logout or user and then refresh the application to the start */}
             <a href="/" onClick={() => Auth.logout()}>Logout</a>
@@ -33,7 +34,7 @@ function NavLink() {
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/products">Products</Nav.Link>
             <Nav.Link href="/Contact">Contact</Nav.Link>
-            <Nav.Link href="/profile">Profile</Nav.Link>
+
             <Nav.Link href="/signup">Signup</Nav.Link>
             <Nav.Link href="/login">Login</Nav.Link>
         </>

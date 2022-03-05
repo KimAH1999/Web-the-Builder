@@ -2,6 +2,7 @@ import React from 'react';
 import {Carousel,Row,Col,Button,Jumbotron} from 'react-bootstrap';
 import "../../node_modules/bootstrap/dist/css/bootstrap.css"
 import Cart from "../components/Cart";
+import { useHistory } from 'react-router-dom'
 
 // img{
 //   /* height: 45em; */
@@ -14,6 +15,10 @@ const Home = () => {
     overflow: "hidden",
     objectFit:"cover",
 
+  }
+  let history= useHistory()
+  const goto = () =>{
+    history.push("/products")
   }
   return (
     <>
@@ -134,7 +139,7 @@ const Home = () => {
         </Jumbotron>
 
         <div className="d-grid gap-2">
-          <Button variant="primary" size="lg">
+          <Button variant="primary" size="lg" onClick={goto}>
             Build a website!
           </Button>
         </div>
