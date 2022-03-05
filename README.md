@@ -37,7 +37,7 @@ npm install
 - [Thao Nguyen](https://github.com/teeteathao)
 - [Denny Jalate](https://github.com/DennyJalate)
 - [Ricardo Crossley](https://github.com/rickyesc1)
-- 
+
 ## License
 
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
@@ -48,5 +48,5 @@ Link:
 
 ## Questions
 
-If you have any questions about the repo, open an issue or contact me directly at Email section incase someone wants your info.. You can find more of my work at [List of give username here.](https://github.com/List of give username here./).
+If you have any questions about the repo, open an issue or contact the contributors directly.
 
