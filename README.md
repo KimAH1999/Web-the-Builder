@@ -1,9 +1,8 @@
 # Web the Builder
-![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## Description
 
-discription here
+The user will be able to log in/sign up  and view videos/topics of programming. The user will be able to set up their profile to display their skills. 
 
 ## Table of Contents 
 
@@ -11,11 +10,11 @@ discription here
 
 * [Usage](#usage)
 
-* [License](#license)
-
 * [Contributing](#contributing)
 
-* [Tests](#tests)
+* [License](#license)
+
+* [Deployment](#deployment)
 
 * [Questions](#questions)
 
@@ -29,19 +28,23 @@ npm install
 
 ## Usage
 
-demo here
+[![Webthebuilder.png](https://i.postimg.cc/7LsZbx0m/Webthebuilder.png)](https://postimg.cc/sBWrNCnh)
   
 ## Contributing
 
-Available in these git links
+- [Kimberly Aguilar](https://github.com/KimAH1999)
+- [Edgar Fernandez](https://github.com/HCTyler)
+- [Thao Nguyen](https://github.com/teeteathao)
+- [Denny Jalate](https://github.com/DennyJalate)
+- [Ricardo Crossley](https://github.com/rickyesc1)
+- 
+## License
 
-## Tests
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
-To run tests, run the following command:
+## Deployment
 
-```
-npm run build....npm run start
-```
+Link: 
 
 ## Questions
 
