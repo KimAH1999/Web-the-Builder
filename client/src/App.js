@@ -1,6 +1,7 @@
 //imports from pages
 import Home from './pages/Home';
 import Login from './pages/LogIn';
+import Signup from './pages/Signup';
 import Products from './pages/products';
 import Success from './pages/Success';
 import Contact from './pages/contact';
@@ -8,11 +9,10 @@ import NavLink from './components/Nav';
 import OrderHistory from './pages/OrderHistory';
 import Detail from './pages/Detail';
 import NoMatch from './pages/NoMatch';
-import store from './utils/store';
 import Profile from './pages/profile';
+import store from './utils/store';
 import { Provider } from 'react-redux';
 import React from 'react';
-import Navbar from 'react-bootstrap/Navbar'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { ApolloClient, InMemoryCache, ApolloProvider, createHttpLink} from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
@@ -46,14 +46,12 @@ import { setContext } from '@apollo/client/link/context';
       <ApolloProvider client={client}>
         <Router>
           <>
-            <Navbar />
-            <div className="flex-column justify-flex-start min-100-vh backgroundGradient">
-            <div className="flex-column justify-flex-start">
+            <NavLink />
             <Provider store={store}>
-              <NavLink />
               <Switch>
                 <Route exact path="/" component={Home} />
                 <Route exact path="/login" component={Login} />
+                <Route exact path="/signup" component={Signup} />
                 <Route exact path= "/products" component={Products} />
                 <Route exact path= "/Contact" component={Contact} />
                 <Route exact path="/success" component={Success} />
@@ -63,8 +61,6 @@ import { setContext } from '@apollo/client/link/context';
                 <Route component={NoMatch} />
               </Switch>
             </Provider>
-            </div>
-          </div>
         </>
       </Router>
     </ApolloProvider>

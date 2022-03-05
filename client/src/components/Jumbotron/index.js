@@ -15,8 +15,4 @@ function Jumbotron({ children }) {
   );
 }
 
-<<<<<<< HEAD
 export default Jumbotron;
-=======
-export default Jumbotron;
->>>>>>> f239d2469acf2e3e40d3e5d683b889a3ae6413bb

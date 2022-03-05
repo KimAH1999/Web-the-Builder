@@ -68,8 +68,4 @@ function ProductList() {
   );
 }
 
-<<<<<<< HEAD
 export default ProductList;
-=======
-export default ProductList;
->>>>>>> f239d2469acf2e3e40d3e5d683b889a3ae6413bb
