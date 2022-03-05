@@ -122,14 +122,6 @@ const Home = () => {
               style={imgStyle}
             />
           </Carousel.Item>
-          <Carousel.Item interval={500}>
-            <img fluid
-              className="d-block w-100"
-              src="./images/.png"
-              alt="CSS"
-              style={imgStyle}
-            />
-          </Carousel.Item>
         </Carousel>
       </Col>
 

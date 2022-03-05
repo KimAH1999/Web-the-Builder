@@ -1,6 +1,7 @@
 //imports from pages
 import Home from './pages/Home';
 import Login from './pages/LogIn';
+import Signup from './pages/Signup';
 import Products from './pages/products';
 import Success from './pages/Success';
 import Contact from './pages/contact';
@@ -50,6 +51,7 @@ import { setContext } from '@apollo/client/link/context';
               <Switch>
                 <Route exact path="/" component={Home} />
                 <Route exact path="/login" component={Login} />
+                <Route exact path="/signup" component={Signup} />
                 <Route exact path= "/products" component={Products} />
                 <Route exact path= "/Contact" component={Contact} />
                 <Route exact path="/success" component={Success} />

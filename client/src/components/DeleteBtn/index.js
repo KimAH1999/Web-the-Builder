@@ -10,8 +10,4 @@ function DeleteBtn(props) {
   );
 }
 
-<<<<<<< HEAD
 export default DeleteBtn;
-=======
-export default DeleteBtn;
->>>>>>> f239d2469acf2e3e40d3e5d683b889a3ae6413bb
