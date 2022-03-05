@@ -1,6 +1,7 @@
 import React from 'react';
 import {Carousel,Row,Col,Button,Jumbotron} from 'react-bootstrap';
 import "../../node_modules/bootstrap/dist/css/bootstrap.css"
+import Cart from "../components/Cart";
 
 // img{
 //   /* height: 45em; */
@@ -15,6 +16,7 @@ const Home = () => {
 
   }
   return (
+    <>
     <Row>
       <Col xs={12} md={8}>
         <Carousel>
@@ -138,6 +140,8 @@ const Home = () => {
         </div>
       </Col>
     </Row>
+    <Cart />
+    </>
 
   );
 };
