@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const { gql } = require('apollo-server-express');
 
 const typeDefs = gql`
@@ -120,4 +119,3 @@ const typeDefs = gql`
 `;
 
 module.exports = typeDefs;
->>>>>>> f239d2469acf2e3e40d3e5d683b889a3ae6413bb
