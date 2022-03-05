@@ -34,10 +34,16 @@ function ProductItem(item) {
     }
   };
 
+  const imageStyles= {
+    width:"30rem",
+    height:"30rem",
+    objectFit:"cover"
+
+  }
   return (
     <div className="card px-1 py-1">
       <Link to={`/products/${_id}`}>
-        <img alt={name} src={`/images/${image}`} />
+        <img alt={name} src={`/images/${image}`} style={imageStyles}/>
         <p>{name}</p>
       </Link>
       <div>

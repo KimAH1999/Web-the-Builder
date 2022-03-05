@@ -12,16 +12,18 @@ const Profile =() => {
 return(
     <div>
 
-    <Container fluid>
+    <Container>
       <Row>
         <Col>
           <Upload />
         </Col>
         <Col>
-          <Comment />
-        </Col>
-        <Col>
           <Skills />
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <Comment />
         </Col>
       </Row>
     </Container>

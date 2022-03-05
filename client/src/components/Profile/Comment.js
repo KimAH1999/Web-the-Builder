@@ -4,7 +4,7 @@ import {Container} from 'react-bootstrap'
 const Comment =() => {
 return(
 <Container>
-        <h2>Comment</h2>
+        <h2></h2>
 </Container>
 )
 }
