@@ -44,7 +44,11 @@ function CategoryMenu() {
 
   return (
     <div>
+<<<<<<< HEAD
       <h2>Choose a Coding Language:</h2>
+=======
+      <h2>Choose a Category:</h2>
+>>>>>>> f239d2469acf2e3e40d3e5d683b889a3ae6413bb
       {categories.map((item) => (
         <button
           key={item._id}
@@ -59,4 +63,8 @@ function CategoryMenu() {
   );
 }
 
+<<<<<<< HEAD
 export default CategoryMenu;
+=======
+export default CategoryMenu;
+>>>>>>> f239d2469acf2e3e40d3e5d683b889a3ae6413bb
