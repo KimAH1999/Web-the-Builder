@@ -47,7 +47,7 @@ function ProductItem(item) {
       </Link>
       <div>
         <div>
-          {quantity} {pluralize('item', quantity)} in stock
+          {quantity} {pluralize('seat', quantity)} avaliable.
         </div>
         <span>${price}</span>
       </div>

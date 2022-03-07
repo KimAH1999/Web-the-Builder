@@ -40,6 +40,9 @@ import { setContext } from '@apollo/client/link/context';
     link: authLink.concat(httpLink),
     cache: new InMemoryCache(),
   });
+  // const homeStyle ={
+
+  // }
 
   function App() {
     return (

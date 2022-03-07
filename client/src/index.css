@@ -20,6 +20,8 @@
  */
 body {
   margin: 0;
+  background:linear-gradient(rgb(181, 198, 206),transparent);
+  background-color:rgb(133, 91, 14) /*this your primary color*/
 }
 
 /**

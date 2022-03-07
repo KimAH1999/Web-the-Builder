@@ -1,5 +1,5 @@
 import React from "react"
-import {Form} from 'react-bootstrap'
+import {Form, Container} from 'react-bootstrap'
 
 
 const Skills =() => {
@@ -16,6 +16,7 @@ const headerStyle= {
 
 
   return(
+<Container>
 <Form style={inputStyle}>
   <h3 style={headerStyle}>My Top Skills</h3>
   <Form.Group controlId="userSkill1">
@@ -31,6 +32,7 @@ const headerStyle= {
     <Form.Control type="name" placeholder="React" />
   </Form.Group>
 </Form>
+</Container>
 )
 }
     
