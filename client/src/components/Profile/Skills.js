@@ -17,7 +17,7 @@ const headerStyle= {
 
   return(
 <Form style={inputStyle}>
-  <h3 style={headerStyle}>My Skills</h3>
+  <h3 style={headerStyle}>My Top Skills</h3>
   <Form.Group controlId="userSkill1">
     <Form.Control type="name" placeholder="HTML" />
   </Form.Group>

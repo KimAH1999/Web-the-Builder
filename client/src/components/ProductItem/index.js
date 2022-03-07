@@ -38,7 +38,6 @@ function ProductItem(item) {
     width:"30rem",
     height:"30rem",
     objectFit:"cover"
-
   }
   return (
     <div className="card px-1 py-1">

@@ -4,11 +4,7 @@ import "../../node_modules/bootstrap/dist/css/bootstrap.css"
 import Cart from "../components/Cart";
 import { useHistory } from 'react-router-dom'
 
-// img{
-//   /* height: 45em; */
-//   overflow: hidden;
-//   object-fit:cover
-// }
+
 const Home = () => {
   const imgStyle={
     height: "38em",
@@ -16,14 +12,17 @@ const Home = () => {
     objectFit:"cover",
 
   }
+  const rowStyle={
+    margin:'3em'
+  }
   let history= useHistory()
   const goto = () =>{
     history.push("/products")
   }
   return (
     <>
-    <Row>
-      <Col xs={12} md={8}>
+    <Row style={rowStyle}>
+      <Col>
         <Carousel>
           <Carousel.Item interval={900}>
             <img fluid
@@ -132,7 +131,7 @@ const Home = () => {
         </Carousel>
       </Col>
 
-      <Col xs={6} md={4} className="sitestory">
+      <Col>
         <Jumbotron>
           <h1>Explore the fundamentals that goes into building a website. </h1><br></br>
           <h7>Our online learning platform offers courses on various programing languages, including HTML, CSS, Javascript, PHP and more!</h7>
