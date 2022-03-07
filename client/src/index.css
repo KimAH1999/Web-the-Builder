@@ -21,7 +21,6 @@
 body {
   margin: 0;
   background:linear-gradient(rgb(181, 198, 206),transparent);
-  background-color:rgb(133, 91, 14) /*this your primary color*/
 }
 
 /**
@@ -1186,8 +1185,6 @@ label form [type='radio'] {
 .container {
   width: 100%;
   max-width: 1200px;
-  margin-left: 1vw;
-  margin-right: 1vw;
 }
 
 .container.container-fluid {
