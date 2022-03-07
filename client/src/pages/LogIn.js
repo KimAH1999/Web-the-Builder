@@ -28,14 +28,25 @@ function Login(props) {
       [name]: value,
     });
   };
+  const loginStyle ={
+    border: '10px solid rgba(0, 0, 0, 0.05)',
+    padding:'10px',
+    minHeight:'50vh'
+  }
+  const formStyle={
+    width:'40vw',
+  }
+  const inputStyle={
+    width: '30vw'
+  }
 
   return (
-    <div className="container my-1">
+    <div className="container my-1" style={loginStyle}>
       <Link to="/signup">← Go to Signup</Link>
 
       <h2>Login</h2>
-      <form onSubmit={handleFormSubmit}>
-        <div className="flex-row space-between my-2">
+      <form onSubmit={handleFormSubmit} style={formStyle}>
+        <div className="flex-row justify-space-between my-2">
           <label htmlFor="email">Email address:</label>
           <input
             placeholder="youremail@test.com"
@@ -43,9 +54,10 @@ function Login(props) {
             type="email"
             id="email"
             onChange={handleChange}
+            style={inputStyle}
           />
         </div>
-        <div className="flex-row space-between my-2">
+        <div className="flex-row justify-space-between my-2">
           <label htmlFor="pwd">Password:</label>
           <input
             placeholder="******"
@@ -53,6 +65,7 @@ function Login(props) {
             type="password"
             id="pwd"
             onChange={handleChange}
+            style={inputStyle}
           />
         </div>
         {error ? (

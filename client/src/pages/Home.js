@@ -135,12 +135,15 @@ const Home = () => {
       <Col xs={6} md={4} className="sitestory">
         <Jumbotron>
           <h1>Explore the fundamentals that goes into building a website. </h1><br></br>
-          <h7>This could apply to anything from creating a single plain text webpage to developing a complex web application.</h7>
+          <h7>Our online learning platform offers courses on various programing languages, including HTML, CSS, Javascript, PHP and more!</h7>
+          <hr />
+          <h7> To get started, simply sign up and reserve a seat!
+          </h7>
         </Jumbotron>
 
         <div className="d-grid gap-2">
           <Button variant="primary" size="lg" onClick={goto}>
-            Build a website!
+            Learn how to code!
           </Button>
         </div>
       </Col>

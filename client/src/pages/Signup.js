@@ -29,14 +29,25 @@ function Signup(props) {
       [name]: value,
     });
   };
+const signinStyle ={
+  border: '10px solid rgba(0, 0, 0, 0.05)',
+  padding:'10px',
+  minHeight:'50vh'
+}
+const formStyle={
+  width:'40vw',
+}
+const inputStyle={
+  width: '30vw'
+}
 
   return (
-    <div className="container my-2">
+    <div className="container my-2" style={signinStyle}>
       <Link to="/login">← Go to Login</Link>
 
       <h2>Signup</h2>
-      <form onSubmit={handleFormSubmit}>
-        <div className="flex-row space-between my-2">
+      <form onSubmit={handleFormSubmit} style={formStyle}>
+        <div className="flex-row justify-space-between my-2">
           <label htmlFor="firstName">First Name:</label>
           <input
             placeholder="First"
@@ -44,9 +55,10 @@ function Signup(props) {
             type="firstName"
             id="firstName"
             onChange={handleChange}
+            style={inputStyle}
           />
         </div>
-        <div className="flex-row space-between my-2">
+        <div className="flex-row justify-space-between my-2">
           <label htmlFor="lastName">Last Name:</label>
           <input
             placeholder="Last"
@@ -54,9 +66,10 @@ function Signup(props) {
             type="lastName"
             id="lastName"
             onChange={handleChange}
+            style={inputStyle}
           />
         </div>
-        <div className="flex-row space-between my-2">
+        <div className="flex-row justify-space-between my-2">
           <label htmlFor="email">Email:</label>
           <input
             placeholder="youremail@test.com"
@@ -64,9 +77,10 @@ function Signup(props) {
             type="email"
             id="email"
             onChange={handleChange}
+            style={inputStyle}
           />
         </div>
-        <div className="flex-row space-between my-2">
+        <div className="flex-row justify-space-between my-2">
           <label htmlFor="pwd">Password:</label>
           <input
             placeholder="******"
@@ -74,6 +88,7 @@ function Signup(props) {
             type="password"
             id="pwd"
             onChange={handleChange}
+            style={inputStyle}
           />
         </div>
         <div className="flex-row flex-end">
