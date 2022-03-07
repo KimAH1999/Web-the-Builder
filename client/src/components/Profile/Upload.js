@@ -19,11 +19,15 @@ const Upload = () => {
       reader.readAsDataURL(file)
     }
   }
-
+  const uploadStyle ={
+    width: '19rem',
+    height:'19.4rem',
+    border: '10px solid rgba(0, 0, 0, 0.05)',
+  }
   return (
     <Container>
-      <Row>
-        <Card style={{ width: '18rem' }} onClick={(()=> imageUploader.current.click())}>
+      <Row style={uploadStyle}>
+        <Card  onClick={(()=> imageUploader.current.click())}>
           <img ref={uploadImage} variant="top" src={blankprofile} alt="" style={{ height: '18rem' }} />
           <input ref={imageUploader} type="file" accept="image" multiple={false} onChange={handleImageUpload} style={{display: "none"}}/>
         </Card>
