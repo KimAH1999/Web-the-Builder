@@ -44,7 +44,7 @@ npm install
 
 ## Deployment
 
-Link: 
+Heroku Deploy Link: https://pacific-sands-33682.herokuapp.com/
 
 ## Questions
 
