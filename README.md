@@ -28,7 +28,10 @@ npm install
 
 ## Usage
 
-[![Webthebuilder.png](https://i.postimg.cc/7LsZbx0m/Webthebuilder.png)](https://postimg.cc/sBWrNCnh)
+![image](https://user-images.githubusercontent.com/87666809/157138606-edf00014-61a6-438e-b919-0ae65700b140.png)
+![image](https://user-images.githubusercontent.com/87666809/157140459-067e9701-d5bf-47cb-9c5c-c5b874731ef0.png)
+![image](https://user-images.githubusercontent.com/87666809/157140633-418dcdf7-6ea7-4459-a1f0-3140c24dab65.png)
+
   
 ## Contributing
 
