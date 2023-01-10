@@ -50,7 +50,7 @@ Then, redirect to stripe payment method.
 
 ## Deployment
 
-Heroku Deploy Link: https://pacific-sands-33682.herokuapp.com/
+Heroku Deploy Link: https://web-the-builder.herokuapp.com/
 
 ## Questions
 
