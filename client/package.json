@@ -15,6 +15,7 @@
         "graphql": "^15.3.0",
         "graphql-tag": "^2.11.0",
         "jwt-decode": "^2.2.0",
+        "mongoose": "^6.8.3",
         "react": "^16.13.1",
         "react-bootstrap": "^1.0.1",
         "react-codemirror2": "^7.2.1",
@@ -25,10 +26,8 @@
         "react-scripts": "^3.4.1"
     },
     "scripts": {
-        "start": "react-scripts --openssl-legacy-provider start",
-        "build": "react-scripts --openssl-legacy-provider build",
-        "test": "react-scripts --openssl-legacy-provider test",
-        "eject": "react-scripts --openssl-legacy-provider eject"
+        "build": "react-scripts build --openssl-legacy-provider",
+        "start": "react-scripts start --openssl-legacy-provider"
     },
     "eslintConfig": {
         "extends": "react-app"
