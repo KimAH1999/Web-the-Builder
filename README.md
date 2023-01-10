@@ -14,8 +14,6 @@ The user will be able to login/sign-up and view informative videos in each mini 
 
 * [License](#license)
 
-* [Deployment](#deployment)
-
 * [Questions](#questions)
 
 ## Installation
@@ -27,6 +25,7 @@ npm install
 ```
 
 ## Usage
+Heroku Deploy Link: https://web-the-builder.herokuapp.com/
 
 ![image](https://user-images.githubusercontent.com/87666809/157138606-edf00014-61a6-438e-b919-0ae65700b140.png)
 ![image](https://user-images.githubusercontent.com/87666809/157140459-067e9701-d5bf-47cb-9c5c-c5b874731ef0.png)
@@ -47,10 +46,6 @@ Then, redirect to stripe payment method.
 ## License
 
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
-
-## Deployment
-
-Heroku Deploy Link: https://web-the-builder.herokuapp.com/
 
 ## Questions
 
